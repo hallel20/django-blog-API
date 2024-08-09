@@ -6,4 +6,4 @@ class Post(models.Model):
     id = models.UUIDField(primary_key=True, auto_created=True)
     title = models.TextField(max_length=255)
     content = models.TextField(max_length=100000)
-    image = models.ImageField()
+    image = models.ImageField(upload_to='images')
